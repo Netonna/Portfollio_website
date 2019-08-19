@@ -1,31 +1,37 @@
 @import "config";
 
-// General Styles
-* {
-  margin: 0;
-  padding: 0;
-}
+#header-home {
+  background: url(../img/showcase.jpg) no-repeat center top / cover;
+  height: 100vh;
 
-body {
-  font-family: "Dosis", sans-serif;
-  line-height: 1.6;
-  background: #fff;
-}
+  .container {
+    height: 50vh;
+    border: solid 2px;
 
-a {
-  text-decoration: none;
-  color: $dark-color;
-}
-
-ul {
-  list-style: none;
-}
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
-img {
-  width: 100%;
+    #main-nav {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 4rem;
+        height: 100%;
+      }
+      ul {
+        display: flex;
+        a {
+          font-size: 1.2rem;
+          margin: 0 16px;
+          padding: 10px 0;
+          border-bottom: transparent solid 3px;
+          transition: all 2s;
+          -webkit-transition: all 2s;
+          -moz-transition: all 2s;
+          -ms-transition: all 2s;
+          -o-transition: all 2s;
+          &: hover {
+            border-color: $main-color;
+          }
+        }
+      }
+    }
+  }
 }
