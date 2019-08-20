@@ -1,22 +1,23 @@
 //Variables
-$website-width: 1280px;
+$website-width: 1400px;
 $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
-$dark-color: #333;
+$dark-color: rgb(0, 0, 0);
 $bg-image: url("../img/showcase.jpg");
 
 // General Styles
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
   background: $light-color;
-  color: $light-color;
+  color: $dark-color;
 }
 
 a {
@@ -46,4 +47,13 @@ h4 {
 }
 .capitalize {
   text-transform: capitalize;
+}
+.bottom-line {
+  width: 48px;
+  height: 2px;
+  background-color: $main-color;
+  margin: 15px auto;
+}
+.main-color {
+  color: $main-color;
 }
