@@ -223,10 +223,52 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1rem;
+      input {
+        padding: 10px;
+        font-size: 0.8rem;
+      }
+      textarea {
+        padding: 10px;
+        font-size: 1rem;
+      }
+      button {
+        width: 33.33vw;
+        height: 3rem;
+        margin: 10rem auto 0 auto;
+        background-color: $dark-color;
+        color: #ffffff;
+        font-size: 1rem;
+      }
+      textarea,
+      button {
+        grid-column: 1 / span 2;
+      }
     }
   }
 }
 
+// Manual Contact
+#manual-contact {
+  background-color: $dark-color;
+  color: #ffffff;
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4rem;
+  }
+}
+#action {
+  background-color: $main-color;
+  .container {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-weight: 1000;
+    padding: 3rem;
+  }
+}
 // footer
 footer {
   background: $dark-color;
@@ -241,7 +283,8 @@ footer {
         width: 30px;
         height: 30px;
         line-height: 30px;
-        padding: 0rem;
+        cursor: pointer;
+        padding: 0.4rem;
         border: solid 2px #ffff;
         border-radius: 50%;
         -webkit-border-radius: 50%;

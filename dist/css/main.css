@@ -212,6 +212,41 @@ h4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem; }
+    #contact-form .container form input {
+      padding: 10px;
+      font-size: 0.8rem; }
+    #contact-form .container form textarea {
+      padding: 10px;
+      font-size: 1rem; }
+    #contact-form .container form button {
+      width: 33.33vw;
+      height: 3rem;
+      margin: 10rem auto 0 auto;
+      background-color: black;
+      color: #ffffff;
+      font-size: 1rem; }
+    #contact-form .container form textarea,
+    #contact-form .container form button {
+      grid-column: 1 / span 2; }
+
+#manual-contact {
+  background-color: black;
+  color: #ffffff; }
+  #manual-contact .container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4rem; }
+
+#action {
+  background-color: #ffbc00; }
+  #action .container {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-weight: 1000;
+    padding: 3rem; }
 
 footer {
   background: black; }
@@ -225,7 +260,8 @@ footer {
       width: 30px;
       height: 30px;
       line-height: 30px;
-      padding: 0rem;
+      cursor: pointer;
+      padding: 0.4rem;
       border: solid 2px #ffff;
       border-radius: 50%;
       -webkit-border-radius: 50%;
