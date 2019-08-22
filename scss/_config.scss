@@ -3,7 +3,7 @@ $website-width: 1400px;
 $main-color: #ffbc00;
 $light-color: #f4f4f4;
 $medium-color: #ccc;
-$dark-color: rgb(0, 0, 0);
+$dark-color: rgb(51, 51, 51);
 $bg-image: url("../img/showcase.jpg");
 
 // General Styles
@@ -15,7 +15,6 @@ $bg-image: url("../img/showcase.jpg");
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
-  background: $light-color;
   color: $dark-color;
 }
 
@@ -23,7 +22,9 @@ a {
   text-decoration: none;
   color: $light-color;
 }
-
+p {
+  font-size: 1.1rem;
+}
 ul {
   list-style: none;
 }
@@ -38,8 +39,18 @@ h4 {
 
 .container {
   max-width: $website-width;
-  padding: 1rem;
   margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  .cont-h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .cont-p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
 }
 .uppercase {
   text-transform: uppercase;

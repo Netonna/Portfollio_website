@@ -79,14 +79,6 @@
 #home-a {
   background-color: #ffffff;
   .container {
-    text-align: center;
-    h2 {
-      font-size: 2rem;
-      font-weight: 300;
-    }
-    p {
-      font-size: 1.3rem;
-    }
     .speciality {
       margin: 2rem;
       display: grid;
@@ -129,14 +121,6 @@
   background-color: #ffffff;
   padding-top: 2rem;
   .container {
-    text-align: center;
-    h2 {
-      font-size: 2rem;
-      font-weight: 300;
-    }
-    p {
-      font-size: 1.3rem;
-    }
     .process {
       margin: 2rem;
       display: grid;
@@ -205,68 +189,197 @@
     }
   }
 }
-
-//Contact Form
-
-#contact-form {
-  .container {
-    padding: 2.5rem;
-    text-align: center;
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 500;
+#about {
+  // About-a: Info
+  &-a {
+    .container {
+      .info {
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-areas:
+          "bio-img bio-text bio-text"
+          "aw-1 aw-2 aw-3";
+        .bio-img {
+          grid-area: bio-img;
+          width: 100%;
+        }
+        .bio-text {
+          grid-area: bio-text;
+          background-color: $light-color;
+          border-left: solid 3px $main-color;
+          padding: 1rem;
+        }
+        .aw- {
+          &1 {
+            grid-area: aw-1;
+          }
+          &2 {
+            grid-area: aw-2;
+          }
+          &3 {
+            grid-area: aw-3;
+          }
+          &1,
+          &2,
+          &3 {
+            h3 {
+              margin-top: 1rem;
+              font-size: 1.4rem;
+            }
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
     }
-    p {
-      font-size: 1.4rem;
+  }
+  // About-b: Technical skills
+  &-b {
+    background: $dark-color;
+    color: #ffff;
+    .container {
+      padding-bottom: 4rem;
+      p {
+        text-align: start;
+        font-size: 1rem;
+        font-weight: 1000;
+        padding-top: 0.8rem;
+      }
+      .prog-bar {
+        width: 100%;
+        height: 20px;
+        background-color: $medium-color;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        div {
+          height: 100%;
+          background-color: $main-color;
+          border-radius: inherit;
+          -webkit-border-radius: inherit;
+          -moz-border-radius: inherit;
+          -ms-border-radius: inherit;
+          -o-border-radius: inherit;
+        }
+      }
     }
-    form {
+  }
+  // About-c: Clients
+  &-c {
+    background-color: $light-color;
+    padding: 3rem 0;
+    .container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 1rem;
-      input {
-        padding: 10px;
-        font-size: 0.8rem;
+      img {
+        width: 70%;
       }
-      textarea {
-        padding: 10px;
-        font-size: 1rem;
-      }
-      button {
-        width: 33.33vw;
-        height: 3rem;
-        margin: 10rem auto 0 auto;
-        background-color: $dark-color;
-        color: #ffffff;
-        font-size: 1rem;
-      }
-      textarea,
-      button {
-        grid-column: 1 / span 2;
+    }
+  }
+
+  // About-d: Testimonials
+  &-d {
+    .container {
+      .testimony {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        padding-bottom: 3rem;
+        p {
+          padding: 1rem;
+          border: solid 1px $dark-color;
+          text-align: start;
+        }
+        ul {
+          display: flex;
+          width: 100%;
+          padding-top: 1rem;
+          align-items: center;
+
+          img {
+            margin-right: 1rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+          li {
+            font-size: 1.1rem;
+          }
+        }
       }
     }
   }
 }
+//My Work
 
-// Manual Contact
-#manual-contact {
-  background-color: $dark-color;
-  color: #ffffff;
+#work {
   .container {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 4rem;
+    padding: 3rem;
   }
 }
-#action {
-  background-color: $main-color;
-  .container {
-    text-align: center;
+// Contact form
+#contact {
+  //Contact Form
+  &-1 {
+    .container {
+      form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        input {
+          padding: 10px;
+          font-size: 0.8rem;
+        }
+        textarea {
+          padding: 10px;
+          font-size: 1rem;
+        }
+        button {
+          width: 33.33vw;
+          height: 3rem;
+          margin: 10rem auto 0 auto;
+          background-color: $dark-color;
+          color: #ffffff;
+          font-size: 1rem;
+        }
+        textarea,
+        button {
+          grid-column: 1 / span 2;
+        }
+      }
+    }
+  }
+
+  // Manual Contact
+  &-2 {
+    background-color: $dark-color;
     color: #ffffff;
-    font-size: 4.5rem;
-    font-weight: 1000;
-    padding: 3rem;
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 4rem;
+    }
+  }
+  // Contact-3: Call to action
+  &-3 {
+    background-color: $main-color;
+    .container {
+      text-align: center;
+      color: #ffffff;
+      font-size: 4.5rem;
+      font-weight: 1000;
+      padding: 3rem;
+    }
   }
 }
 // footer
