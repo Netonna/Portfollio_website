@@ -327,6 +327,46 @@ h4 {
     font-weight: 1000;
     padding: 3rem; }
 
+#work .container .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  #work .container .items .item {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    #work .container .items .item-image img {
+      width: 100%;
+      height: 100%; }
+    #work .container .items .item-text {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      color: #ffffff;
+      transform: translateY(30%);
+      -webkit-transform: translateY(30%);
+      -moz-transform: translateY(30%);
+      -ms-transform: translateY(30%);
+      -o-transform: translateY(30%); }
+      #work .container .items .item-text p {
+        font-size: 1.3rem;
+        padding-bottom: 0.5rem; }
+      #work .container .items .item-text h2 {
+        font-size: 2.3rem; }
+    #work .container .items .item::after {
+      content: "";
+      position: absolute;
+      background-color: #ffbc00;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.9; }
+      #work .container .items .item::after:hover {
+        background-color: #333333; }
+
 footer {
   background: #333333; }
   footer .container {
