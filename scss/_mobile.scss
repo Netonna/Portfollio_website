@@ -1,0 +1,98 @@
+@media screen and (max-width: 800px) {
+  #header-home {
+    max-height: 500px;
+  }
+  // About-d: Testimonials
+  .testimony {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 2rem !important;
+  }
+
+  //My Work
+
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  #header-home,
+  #main-inner {
+    background: url(../img/showcase.jpg) no-repeat center 30% / cover !important;
+    height: 170px !important;
+    border-bottom: solid 3px $main-color;
+  }
+  #header-text {
+    display: none;
+  }
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    a {
+      font-size: 1rem !important;
+    }
+  }
+
+  //Home A:Speciality
+
+  .speciality {
+    display: block !important;
+    div {
+      padding: 1rem;
+    }
+  }
+
+  //Home B: Stats
+  #home-b {
+    display: block !important;
+  }
+
+  //Home C: Process
+  .process {
+    display: block !important;
+  }
+  //Footer
+  footer {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  //About-a: info
+  .info {
+    display: block !important;
+    .bio-text {
+      margin-top: 2rem;
+    }
+    ul {
+      padding: 2rem;
+    }
+  }
+  // About-c: Clients
+  #about-c {
+    display: none;
+  }
+  //My Work
+
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  //contact
+  form {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 2rem;
+    margin: 0 1rem;
+  }
+  textarea,
+  button {
+    grid-column: 1 / span 1 !important;
+  }
+  #contact-2 {
+    .container {
+      flex-direction: column !important;
+      ul {
+        border-bottom: solid 1px $medium-color;
+        padding: 1rem;
+      }
+    }
+  }
+}
